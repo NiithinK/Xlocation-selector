@@ -92,7 +92,7 @@ const LocationSelector = () => {
         <p style={{marginTop:'10rem'}}>
           <span style={{fontWeight:"normal",fontSize:'30px' ,}}> You selected</span>
           <span style={{fontWeight:'bolder',fontSize:'45px'}}> {selectedCity},</span> 
-          <span style={{fontWeight:"bold",fontSize:'30px' ,color:'gray'}}>{selectedState}, {selectedCountry}</span></p>
+          <span style={{fontWeight:"bold",fontSize:'30px' ,color:'gray'}}> {selectedState}, {selectedCountry}</span></p>
       )}
     </>
   );
