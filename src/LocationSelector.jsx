@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import './App.css'
 const LocationSelector = () => {
   const [countries, setCountries] = useState([]);
   const [states, setStates] = useState([]);
@@ -57,12 +57,12 @@ const LocationSelector = () => {
   return (
     <>
     
-    <div style={{display:'flex',justifyContent:'center'}} >
+    <div style={{display:'flex',justifyContent:'space-around'}} >
       
       <div >
         <label htmlFor="country">Select Country: </label>
         <select id="country" value={selectedCountry} onChange={handleCountryChange}>
-          <option value="">Select Country</option>
+          <option value="">Select Country  </option>
           {countries.map(country => (
             <option key={country} value={country}>{country}</option>
           ))}
@@ -71,7 +71,7 @@ const LocationSelector = () => {
       <div>
         <label htmlFor="state">Select State: </label>
         <select id="state" value={selectedState} onChange={handleStateChange} disabled={!selectedCountry}>
-          <option value="">Select State</option>
+          <option value="">Select State  </option>
           {states.map(state => (
             <option key={state} value={state}>{state}</option>
           ))}
@@ -80,7 +80,7 @@ const LocationSelector = () => {
       <div>
         <label htmlFor="city">Select City: </label>
         <select id="city" value={selectedCity} onChange={handleCityChange} disabled={!selectedState}>
-          <option value="">Select City</option>
+          <option value="">Select City  </option>
           {cities.map(city => (
             <option key={city} value={city}>{city}</option>
           ))}

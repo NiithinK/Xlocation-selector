@@ -3,3 +3,7 @@
 }
 /* LocationSelector.css */
 
+select{
+  width: auto;
+  height: 2rem;
+}
